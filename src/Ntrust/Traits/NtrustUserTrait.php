@@ -10,7 +10,7 @@ trait NtrustUserTrait
     //Big block of caching functionality.
     public function cachedRoles()
     {
-        $userPrimaryKey = $this->primaryKey;
+        /*$userPrimaryKey = $this->primaryKey;
         $cacheKey = 'ntrust_roles_for_' . self::$roleProfile . '_'.$this->$userPrimaryKey;
 
         if (Cache::getStore() instanceof TaggableStore) {
@@ -19,7 +19,7 @@ trait NtrustUserTrait
                     return $this->roles()->get();
                 });
         } 
-        else
+        else*/
             return $this->roles()->get();
     }
 
